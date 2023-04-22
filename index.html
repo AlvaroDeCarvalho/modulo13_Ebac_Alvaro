@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loja de imagens</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+
+    <style>
+        
+        header{
+            position: static;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+        section{
+            margin-top: 100px;
+            height: 80vh;
+            background-color: #f0efef;
+            
+            
+        }
+        .card-img-overlay{
+            background-color: rgba(0, 0, 0, 0.3);
+            color: aliceblue;
+        }
+        .card{
+            margin: 30px;
+        }
+        img{
+            max-height: 450px;
+        }
+       
+        
+        .carousel-item img{
+            padding: 30px;
+        }
+    
+        @media screen and (max-width:767px){
+            .carousel img{
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg navbar-expand-md  navbar-expand-sm">
+            <div class="container">
+                <h1>Loja de Fotos</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills" >
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">produtos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contatos ">contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <h2 class="p-3">
+                Quem somos?
+            </h2>
+            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, doloremque inventore recusandae, ab, eligendi repellendus voluptatibus dignissimos modi mollitia sint vero minima aperiam exercitationem dolorum molestias sit amet quidem repellat!</P>
+            <div class="container">
+                
+                    <div id="carousel-incio" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="https://cdn.pixabay.com/photo/2023/04/15/13/34/cherry-blossoms-7927688_960_720.jpg" alt="">
+                            </div>
+    
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="https://cdn.pixabay.com/photo/2023/04/04/19/48/houses-7900142_960_720.jpg" alt="" data-bs-interval="3000">
+                            </div>
+    
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="https://cdn.pixabay.com/photo/2023/04/07/06/12/flower-7905596_960_720.jpg" alt="" data-bs-interval="3000">
+                            </div>
+                        </div>
+                    </div> 
+            </div>
+        </section>
+        <section id="produtos">
+            <div class="container">
+                <h2>Nossos produtos</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <article class="card">
+                            
+                            <img src="https://cdn.pixabay.com/photo/2023/04/15/17/08/bernese-mountain-dog-7928156_960_720.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <h4 class="card-title">
+                                    Uma das nossas fotos
+                                </h4>
+                                <h6 class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam accusamus laboriosam incidunt, autem aliquam earum voluptas eveniet doloribus obcaecati ut dolorum repudiandae corrupti error explicabo dolores? Adipisci sint beatae maxime?</h6>
+                                <a href=""></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <article class="card">
+                            
+                            <img src="https://cdn.pixabay.com/photo/2023/04/15/17/08/bernese-mountain-dog-7928156_960_720.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <h4 class="card-title">
+                                    Uma das nossas fotos
+                                </h4>
+                                <h6 class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam accusamus laboriosam incidunt, autem aliquam earum voluptas eveniet doloribus obcaecati ut dolorum repudiandae corrupti error explicabo dolores? Adipisci sint beatae maxime?</h6>
+                                <a href=""></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <article class="card">
+                            
+                            <img src="https://cdn.pixabay.com/photo/2023/04/15/17/08/bernese-mountain-dog-7928156_960_720.jpg" alt="">
+                            <div class="card-img-overlay">
+                                <h4 class="card-title">
+                                    Uma das nossas fotos
+                                </h4>
+                                <h6 class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam accusamus laboriosam incidunt, autem aliquam earum voluptas eveniet doloribus obcaecati ut dolorum repudiandae corrupti error explicabo dolores? Adipisci sint beatae maxime?</h6>
+                                <a href=""></a>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
